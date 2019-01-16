@@ -8,9 +8,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+/**
+ * Test site tracker.
+ * 
+ * @author Muhammad
+ *
+ */
 public class TestSiteTracker {
     private static WebDriver driver;
     private static final String BASE_URL = "https://developer.salesforce.com";
@@ -22,6 +29,7 @@ public class TestSiteTracker {
             System.getProperty("user.dir") + "\\src\\main\\java\\" + "chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(BASE_URL);
+        // login code will be here if credentials are provided
         driver.manage().window().maximize();
     }
 
@@ -86,6 +94,11 @@ public class TestSiteTracker {
             }
         }
         return isTestingApexPageOpened;
+    }
 
+    @AfterClass
+    public void teardown() {
+        // log out code if already logged in with credentials
+        driver.quit();
     }
 }
