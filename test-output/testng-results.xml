@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-01-16T20:12:12Z" name="Default suite" finished-at="2019-01-16T20:12:40Z" duration-ms="28434">
+    <groups>
+    </groups>
+    <test started-at="2019-01-16T20:12:12Z" name="Default test" finished-at="2019-01-16T20:12:40Z" duration-ms="28434">
+      <class name="org.muhammad.practice.exercises.TestSiteTracker">
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:org.muhammad.practice.exercises.TestSiteTracker@58695725]" started-at="2019-01-16T20:12:12Z" name="classSetup" finished-at="2019-01-16T20:12:23Z" duration-ms="10644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method signature="test()[pri:0, instance:org.muhammad.practice.exercises.TestSiteTracker@58695725]" started-at="2019-01-16T20:12:23Z" name="test" finished-at="2019-01-16T20:12:40Z" duration-ms="17772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- org.muhammad.practice.exercises.TestSiteTracker -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
